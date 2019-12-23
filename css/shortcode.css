@@ -252,7 +252,7 @@
 	margin-top: -10px;
 	text-transform: uppercase;
 }
-.welcome-section .welcome-content a.read-more {
+.welcome-section .welcome-content a {
 	background-color: #f88c91;
 	border: 1px solid #f88c91;
 	color: #fff;
@@ -270,11 +270,12 @@
 	-o-transition: all 1s ease 0s;
 	transition: all 1s ease 0s;
 }
-.welcome-section .welcome-content a.read-more:hover {
+.welcome-section .welcome-content a:hover {
 	background-color: transparent;
 	border: 1px solid #f88c91;
 	color: #f88c91;
 }
+
 
 /* - Welcome Section 1 */
 .welcome-section-1 .mission-content {
@@ -430,7 +431,7 @@
 	width: 89px;
 	line-height: 80px;
 	border: 4px solid #fff;
-	background-color: #3b3b3b;
+	background-color: #f88c91;
 	border-radius: 100%;
 	margin-bottom: 25px;
 	-webkit-transition: all 1s ease 0s;
@@ -768,7 +769,7 @@
 .order-section-1 .form-group select  {
 	background-color: transparent;
 }
-.order-section-1 .col-md-12.col-sm-12.col-xs-12.order-links {
+.order-section-1 .order-links {
 	margin-bottom: 65px;
 	display: inline-block;
 }
@@ -879,7 +880,12 @@
 }
 
 /* - Latest Blog */
-
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .latest-blog {
 	text-align: center;
 }
@@ -2579,7 +2585,9 @@
 	}
 	/* - Latest Blog */
 	.latest-blog .latest-blog-content {
-		padding-left: 85px;
+		/* padding-left: 85px; */
+		padding: 20px;
+		height: auto;
 	}
 	.latest-blog .entry-title {
 		font-size: 15px;
@@ -2608,7 +2616,7 @@
 @media only screen and (min-width: 1201px) and (max-width: 1365px) {
 	/* - Order Section */
 	.order-section .right-image {
-		right: -70px;
+		right: -105px;
 	}
 }
 
@@ -2689,6 +2697,10 @@
 	/* - Contact Us 1 */
 	.contact-us-1 .contact-info h3 {
 		font-size: 18px;
+	}
+	.order-section .section-padding {
+    padding-bottom: 30px;
+    padding-top: 30px;
 	}
 }
 
@@ -2801,6 +2813,14 @@
 	.contact-us-1 .contact-info h3 {
 		font-size: 13px;
 	}
+	/* Contact Page */
+	.map-canvas{
+		height: 490px;
+	}
+	.order-section .section-padding {
+	    padding-bottom: 20px;
+	    padding-top: 20px;
+	}
 }
 
 /* - min-width: 768 to max-width: 991 */
@@ -2841,15 +2861,33 @@
 	}
 	/* - Festival Section */
 	.festival-section .festival-details-tab .nav > li > a i {
-		height: 70px;
-		width: 70px;
-		line-height: 60px;
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		margin: 0 auto 10px;
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.festival-section .festival-details-tab .nav > li > a i img {
+		height: 25px;
+		width: 25px;
 	}
 	.festival-section .festival-details-tab .nav > li {
 		margin-right: 3px;
 	}
 	.festival-section .festival-details-tab .nav > li > a {
 		font-size: 12px;
+		padding: 10px 5px;
+	}
+	.festival-section .festival-content{
+		margin: 0 10% 20px;
+	}
+	.festival-section::after{
+		padding: 50px 0;
+	}
+	.festival-section .festival-details-tab .nav-tabs {
+	    margin-bottom: -60px;
 	}
 	/* - Menu Section */
 	.menu-section .menu-box img {
@@ -2930,20 +2968,105 @@
 	.contact-us-1 .col-xs-6.contact-content {
 		width: 50%;
 	}
+	/* photo slider */
+	.photo-slider .carousel-caption img {
+		margin-bottom: 15px; 
+		width: 70px;
+		height: 70px;
+	}
+	.photo-slider .carousel-control i{
+		width: 35px;
+		height: 35px;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+	}
+	.photo-slider .carousel-caption p {
+		font-size: 15px;
+	}
+	.photo-slider .carousel-caption a {
+		padding: 8px 15px;
+		margin-top: 5px;
+		font-size: 10px;
+	}
+	.team-content>div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.order-section .section-padding {
+	    padding-bottom: 30px;
+	    padding-top: 30px;
+	}
+	.counter-section .counter-box h3::after{
+		background-color: transparent;
+	}
+	.counter-section.container-fluid {
+	    padding: 40px 0;
+	}
+	/* Contact Page */
+	
+	.contact-us-1 .form-control{
+		padding: 10px 15px;
+		font-size: 10px;
+	}
+	.contact-us-1 input[type="submit"]{
+		font-size: 10px;
+		padding: 10px 35px;
+	}
+	.contact-us-1 .contact-detail {
+	    padding-top: 0%;
+	}
+	.contact-us-1 .contact-info p{
+		font-size: 13px;
+		line-height: 17px;
+	}
+	.map-canvas {
+	    height: 300px;
+	}
+	/* Gallery Page */
+	.ow-pagination {
+	    margin-top: 15px;
+	}
+	/* Event Page Css */
+	.latest-blog .entry-title {
+	    font-size: 14px;
+	}
+	.latest-blog .entry-content p{
+		font-size: 13px;
+		line-height: 18px;
+	}
+	.order-section-1 .order-links {
+	    margin-bottom: 20px;
+	}
+	.order-section-1 p{
+		font-size: 12px;
+	}
 }
 
 /* -  max-width: 639 */
 @media (max-width: 639px) {
+	
 	/* - Photo Slider */
 	.photo-slider .carousel-caption img {
 		margin-bottom: 15px; 
+		width: 70px;
+		height: 70px;
+	}
+	.photo-slider .carousel-control i{
+		width: 35px;
+		height: 35px;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
 	}
 	.photo-slider .carousel-caption p {
-		font-size: 20px;
+		font-size: 15px;
 	}
 	.photo-slider .carousel-caption a {
-		padding: 10px 20px;
+		padding: 8px 15px;
 		margin-top: 5px;
+		font-size: 10px;
 	}
 	/* - Photo Slider 1 */ 
 	.photo-slider-1 .carousel-caption .slider-content h3 {
@@ -2960,10 +3083,24 @@
 		padding: 13px 20px;
 	}
 	/* - Welcome Section */
+	.welcome-section .section-padding {
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	}
 	.welcome-section .col-xs-6 {
 		width: 100%;
 		text-align: center;
 		margin-bottom: 30px;
+		margin-bottom: 15px;
+    	margin-top: 15px;
+	}
+	.welcome-section .col-xs-6 img{
+		max-width: 40%;
+	}
+	.welcome-section .welcome-content a{
+		margin-top: 10px;
+		font-size: 10px;
+		padding: 10px 25px;
 	}
 	/* - Menu Section */
 	.menu-section {
@@ -2977,6 +3114,10 @@
 	}
 	.team-contact-info {
 		text-align: left;
+	}
+	
+	.team-content>div img{
+		max-width: 60%;
 	}
 	/* - Order Section 1 */
 	.order-section-1 .col-xs-4 {
@@ -3028,6 +3169,65 @@
 	.video-link-list {
 		padding: 0 3% 0 6%;
 	}
+
+	/* Festival Section */
+	.festival-section .section-padding{
+		padding-top: 20px;
+    	padding-bottom: 20px;
+	}
+	.festival-section .festival-content {
+	    margin: 0 10% 40px;
+	}
+	.festival-section .festival-details-tab .nav-tabs{
+		margin-bottom: -91px;
+	}
+	/* Order Section */
+	.order-section .section-padding {
+	    padding-bottom: 10px;
+	    padding-top: 10px;
+	}
+	.order-section a.order-now{
+		font-size: 10px;
+	    padding: 10px 30px;
+	    margin-top: 0px;
+	    margin-bottom: 30px;
+	}
+	.order-section .online-form p{
+		font-size: 12px;
+	}
+	.order-section .online-form p a{
+		display: block;
+	}
+	.order-section .form-control{
+		font-size: 11px;
+	    margin-bottom: 15px;
+	    padding-bottom: 10px;
+	    padding-left: 15px;
+	    padding-top: 10px;
+	}
+	.order-section .form-group select{
+		height: 37px;
+		padding: 0 13px;
+		font-size: 12px;
+	}
+	/* Counter Section */
+	.counter-section.container-fluid {
+	    padding: 15px 0;
+	}
+	.counter-section .counter-box span{
+		font-size: 35px;
+	}
+	.counter-section .counter-box h3{
+		padding-top: 15px;
+    	margin-bottom: 3px;
+	}
+	.counter-section .counter-box p{
+		font-size: 13px;
+	}
+	.counter-box {
+	    margin-bottom: 15px;
+	}
+	
 }
 /* -  max-width: 479 */
 @media (max-width: 479px) {
@@ -3036,9 +3236,12 @@
 		display: none;
 	}
 	.photo-slider .carousel-control i {
-		height: 35px;
-		width: 35px;
-		line-height: 35px;
+	    height: 28px;
+	    width: 28px;
+	    line-height: 35px;
+	}
+	.fa-caret-right:before, .fa-caret-left:before {
+	    font-size: 20px;
 	}
 	/* - Photo Slider 1 */ 
 	.photo-slider-1 .carousel-caption .slider-content h3 {
@@ -3060,11 +3263,22 @@
 		font-size: 11px;
 	}
 	.festival-section .festival-content {
-		padding: 40px;
+		padding: 30px;
+	}
+	.festival-section .festival-content p {
+	    font-size: 13px;
+	    line-height: 20px;
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+	}
+	.festival-section .festival-content a.read-more{
+		font-size: 10px;
+    	padding: 10px 25px;
 	}
 	/* - Menu Section */
 	.menu-section .menu-box {
-		padding: 20px 20px 20px 115px;
+		padding: 10px 20px 10px 115px;
+		margin-bottom: 10px;
 	}
 	.menu-section .menu-box img {
 		max-width: 100px; 
@@ -3164,11 +3378,16 @@
 		font-size: 15px;
 	}
 	.festival-section .festival-content {
-		margin: 0 0 40px;
+		margin: 0 0 20px;
+	}
+	.festival-section::after{
+		padding: 60px 0;
 	}
 	/* - Menu Section */
 	.menu-section .menu-box p {
-		line-height: 20px;
+		line-height: 17px;
+    	font-size: 12px;
+    	margin-bottom: 5px;
 	}
 	/* - Team Section */
 	.team-section .carousel-control {
@@ -3182,6 +3401,7 @@
 	.order-section-1 a.order-now {
 		padding: 5px;
 		font-size: 10px;
+		margin: 5px;
 	}
 	.order-section-1 a.free-delivery {
 		padding: 6px;
