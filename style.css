@@ -1750,11 +1750,7 @@ main,footer {
 		padding-bottom: 10px;
 	}
 }
-.menu-box img{
-	width: 310px;
-	height: 207px;
-	margin-left: -3px;
-}
+
 /* -  max-width: 360 */
 @media (max-width: 360px) {
 	.header-main .menu-search .sb-search.sb-search-open .sb-search-input {
