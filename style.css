@@ -819,9 +819,11 @@ main,footer {
     transition: width 0.3s;
     -webkit-backface-visibility: hidden;
 }
-
+.navbar-fixed-top{
+	background-color:  #fff !important;
+}
 .header-main.navbar-fixed-top .menu-search .sb-search-submit {
-	background-color: transparent;
+	background-color:transparent;
 }
 .header-main.navbar-fixed-top .cart > li > a {
 	background-color: #f88c91;
@@ -1756,4 +1758,11 @@ main,footer {
 	.header-main .menu-search .sb-search.sb-search-open .sb-search-input {
 		width: 132px;
 	}
+}
+.slider-item{
+	height: 83.5vh !important;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100% !important;
 }

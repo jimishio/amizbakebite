@@ -47,7 +47,7 @@
 	margin-right: 36px;
 }
 .ow-navigation .nav.navbar-nav li > a {
-	color: #fff;
+	color: #222;
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: capitalize;
@@ -115,10 +115,10 @@
 	margin-right: 0;
 }
 .navbar-fixed-top .ow-navigation .navbar-brand h3 {
-	color: #fff;
+	color: #222;
 }
 .navbar-fixed-top .ow-navigation .nav.navbar-nav li > a {
-	color: #fff;
+	color: #222;
 }
 .navbar-fixed-top .ow-navigation .navbar-brand {
 	padding-bottom: 26px;
@@ -132,12 +132,12 @@
 .navbar-fixed-top .ow-navigation .nav.navbar-nav li:focus > a,
 .ow-navigation .nav.navbar-nav li.dropdown li > a:hover,
 .ow-navigation .nav.navbar-nav li.dropdown li > a:focus {
-	color: #fff;
+	color: #222;
 }
 .ow-navigation .nav.navbar-nav li.dropdown li > a:hover,
 .ow-navigation .nav.navbar-nav li.dropdown li > a:focus {
 	background-color: transparent;
-	color: #fff;
+	color: #222;
 }
 .navbar-fixed-top .ow-navigation .nav.navbar-nav li.dropdown li > a:hover,
 .navbar-fixed-top .ow-navigation .nav.navbar-nav li.dropdown li > a:focus {
@@ -184,6 +184,7 @@
 	}
 	.ow-navigation .nav.navbar-nav li > a {
 		padding: 51px 0;
+		color: #222 !important;
 	}
 	.ow-navigation .nav.navbar-nav > li > a:hover,
 	.ow-navigation .nav.navbar-nav > li > a:focus,
@@ -193,7 +194,7 @@
 	.ow-navigation .nav.navbar-nav > li:hover > a,
 	.ow-navigation .nav.navbar-nav > li:focus > a {
 		background-color: transparent;
-		color: #fff;
+		color: #222 !important;
 	}
 	.ow-navigation .nav.navbar-nav li.dropdown:hover > .dropdown-menu {
 		opacity: 1;

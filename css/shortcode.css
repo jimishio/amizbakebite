@@ -467,14 +467,19 @@
 	border-left: 4px solid #fafafa;
 	position: relative;
 	padding-left: 330px;
-	padding-bottom: 45px;
-	padding-top: 60px;
+	padding-bottom: 15px;
+	padding-top: 30px;
 	padding-right: 50px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	-webkit-transition: all 1s ease 0s;
 	-moz-transition: all 1s ease 0s;
 	-o-transition: all 1s ease 0s;
 	transition: all 1s ease 0s;	
+	margin-top: 30px;
+	min-height: 208px;
+}
+.menu-section .menu-box p{
+	margin-bottom: 0px;
 }
 .menu-section .menu-box:nth-child(2n-1) {
 	clear: both;
@@ -893,7 +898,7 @@
 .latest-blog .post-content {
 	background-color: #f6f6f6;
 	margin-top: 10px;
-	padding-bottom: 25px;
+	padding-bottom: 0;
 	text-align: left;
 	-webkit-transition: all 1s ease 0s;
 	-moz-transition: all 1s ease 0s;
