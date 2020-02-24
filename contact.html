@@ -27,6 +27,15 @@
 
 	<!-- Custom - Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style>
+		/* Always set the map height explicitly to define the size of the div
+		 * element that contains the map. */
+		#map {
+		  height: 100%;
+		}
+		
+	</style>
 	
 	<!--[if lt IE 9]>
 		<script src="js/html5/respond.min.js"></script>
@@ -144,9 +153,7 @@
 					<!-- Map Section -->
 					<div class="row">
 						<div class="map col-md-12 col-sm-12 col-xs-12 c">
-							<div class="map-canvas" id="map-canvas-contact" data-lat="-37.817214" data-lng="144.955925" data-string="Ami's BakeBiteBhavnagar, Gujarat India" data-zoom="12">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14822.034485650427!2d72.1529923!3d21.7605676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa03276c0a147d5de!2sAmi&#39;s%20Bakebite!5e0!3m2!1sen!2sin!4v1577946530420!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-							</div>
+							<div id="map"></div>
 						</div>
 					</div>
 					<!--  Map Section /- -->
@@ -219,10 +226,20 @@
 	<script src="libraries/lib.js"></script><!-- Bootstrap JS File v3.3.5 -->
 
 	<!-- Library - Google Map API -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg0VrLjLvDLSQdS7hw6OfZJmvHhtEV_sE"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7bmFxVzbT7tIIAbcmwXA6y4VJpaX1vyE&callback=initMap" async defer></script>
 	
 	<!-- Library - Theme JS -->
 	<script src="js/functions.js"></script>
+
+	<script>
+		var map;
+		function initMap() {
+		  map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: 21.7562423, lng: 72.1496317},
+			zoom: 15
+		  });
+		}
+	  </script>
 </body>
 
 <!-- Mirrored from premiumlayers.net/demo/html/royalbakery/contact-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2019 06:06:17 GMT -->
